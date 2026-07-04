@@ -629,15 +629,19 @@ gap:35px;
 
 .project-card{
 
-background:white;
+    background:white;
 
-border-radius:20px;
+    border-radius:20px;
 
-overflow:hidden;
+    overflow:hidden;
 
-box-shadow:var(--shadow);
+    box-shadow:var(--shadow);
 
-transition:.35s;
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
 
 }
 
@@ -659,7 +663,13 @@ object-fit:cover;
 
 .project-card .content{
 
-padding:28px;
+    padding:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
 
 }
 
@@ -1772,5 +1782,53 @@ width:280px;
 height:340px;
 
 }
+
+}
+
+/* ============================================
+PROJECT BUTTONS
+============================================ */
+
+.project-links{
+
+    margin-top:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.project-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    background:#0f172a;
+
+    color:white !important;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-btn:hover{
+
+    background:var(--accent);
+
+    transform:translateY(-2px);
 
 }
