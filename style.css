@@ -1832,3 +1832,67 @@ PROJECT BUTTONS
     transform:translateY(-2px);
 
 }
+
+/* ============================================
+PUBLICATION BUTTONS
+============================================ */
+
+.publication-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.publication-links{
+
+    margin-top:auto;
+
+    padding-top:20px;
+
+}
+
+.publication-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    background:#0f172a;
+
+    color:white !important;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.publication-btn:hover{
+
+    background:var(--accent);
+
+    color:white !important;
+
+}
+
+.publication-btn.disabled{
+
+    background:#cbd5e1;
+
+    color:#64748b !important;
+
+    cursor:default;
+
+}
