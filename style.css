@@ -682,11 +682,10 @@ margin-bottom:15px;
 }
 
 .project-card p{
-
-color:var(--secondary);
-
-margin-bottom:20px;
-
+    color:#4b5563;
+    line-height:1.8;
+    margin:18px 0;
+    height:120px;
 }
 
 .project-card a{
