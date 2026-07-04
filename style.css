@@ -1042,41 +1042,6 @@ color:var(--secondary);
 
 }
 
-.project-links{
-
-    display:flex;
-
-    gap:12px;
-
-    margin-top:20px;
-
-}
-
-.project-links a{
-
-    flex:1;
-
-    text-align:center;
-
-    padding:12px;
-
-    border-radius:10px;
-
-    background:#111827;
-
-    color:white;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-.project-links a:hover{
-
-    background:var(--accent);
-
-}
 /* =====================================================
 EDUCATION
 ===================================================== */
