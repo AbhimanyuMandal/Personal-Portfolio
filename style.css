@@ -653,7 +653,7 @@ transform:translateY(-10px);
 
 .project-card img{
 
-height:220px;
+height:185px;
 
 width:100%;
 
@@ -1920,5 +1920,33 @@ PROJECT FOOTER
     color:var(--accent2);
 
     transform:translateX(5px);
+
+}
+
+.project-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-top:18px;
+
+}
+
+.project-tags span{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    background:#eef2ff;
+
+    color:#1e293b;
+
+    font-size:13px;
+
+    font-weight:600;
 
 }
