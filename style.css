@@ -1789,49 +1789,8 @@ height:340px;
 PROJECT BUTTONS
 ============================================ */
 
-.project-links{
 
-    margin-top:auto;
 
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
-
-}
-
-.project-btn{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:10px;
-
-    padding:12px;
-
-    border-radius:12px;
-
-    background:#0f172a;
-
-    color:white !important;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-.project-btn:hover{
-
-    background:var(--accent);
-
-    transform:translateY(-2px);
-
-}
 
 /* ============================================
 PUBLICATION BUTTONS
@@ -1894,5 +1853,72 @@ PUBLICATION BUTTONS
     color:#64748b !important;
 
     cursor:default;
+
+}
+/* ============================================
+PROJECT FOOTER
+============================================ */
+
+.project-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.project-card .content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+    padding:28px;
+
+}
+
+.project-footer{
+
+    margin-top:auto;
+
+    padding-top:18px;
+
+    border-top:1px solid #e5e7eb;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.project-footer a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:var(--accent);
+
+    transition:.25s;
+
+}
+
+.project-footer a:hover{
+
+    color:var(--accent2);
+
+    transform:translateX(5px);
 
 }
