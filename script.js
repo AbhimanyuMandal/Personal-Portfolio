@@ -222,3 +222,4 @@ const counterObserver = new IntersectionObserver(entries=>{
 });
 
 counters.forEach(c=>counterObserver.observe(c));
+
