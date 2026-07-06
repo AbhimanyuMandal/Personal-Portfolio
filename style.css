@@ -1075,78 +1075,129 @@ footer small {
    DARK MODE
 ===================================================== */
 
-body.dark {
-    background: var(--color-bg-dark);
-    color: var(--color-text-dark);
+body.dark{
+    background:#0f172a;
+    color:#f8fafc;
 }
 
-body.dark section {
-    background: var(--color-bg-dark);
+/* Sections */
+
+body.dark section{
+    background:#0f172a;
 }
 
-body.dark .project-card,
+/* Navbar */
+
+body.dark header{
+    background:#0f172a;
+}
+
+body.dark .navbar{
+    background:transparent;
+}
+
+body.dark .logo,
+body.dark .nav-links a{
+    color:#fff;
+}
+
+body.dark #themeToggle{
+    background:#1e293b;
+    color:#fff;
+}
+
+/* Hero */
+
+body.dark .hero h2{
+    color:#cbd5e1;
+}
+
+body.dark .hero p{
+    color:#cbd5e1;
+}
+
+/* THIS FIXES YOUR BADGE */
+
+body.dark .availability{
+    background:#ffffff;
+    color:#111827;
+}
+
+body.dark .availability .dot{
+    background:#16a34a;
+}
+
+/* Cards */
+
 body.dark .skill-card,
+body.dark .project-card,
 body.dark .publication-card,
 body.dark .education-card,
+body.dark .timeline-content,
 body.dark .contact-card,
-body.dark .timeline-content {
-    background: var(--color-surface-dark);
-    color: var(--color-text-dark);
+body.dark .award-card{
+
+    background:#1e293b;
+    color:#f8fafc;
+
 }
+
+/* Card headings */
+
+body.dark .skill-card h3,
+body.dark .project-card h3,
+body.dark .publication-card h3,
+body.dark .education-card h3,
+body.dark .timeline-content h3,
+body.dark .award-card h3,
+body.dark .contact-card h3{
+
+    color:#ffffff;
+
+}
+
+/* Paragraphs */
 
 body.dark p,
-body.dark h4,
-body.dark li {
-    color: var(--color-text-secondary-dark);
+body.dark li,
+body.dark h4{
+
+    color:#cbd5e1;
+
 }
 
-body.dark .navbar {
-    background: rgba(15, 23, 42, 0.9);
+/* Project tags */
+
+body.dark .project-tags span,
+body.dark .skill-tags span{
+
+    background:#334155;
+    color:#ffffff;
+
 }
 
-body.dark .secondary-btn {
-    background: var(--color-surface-dark);
-    border-color: #334155;
-    color: white;
+/* Footer line */
+
+body.dark .project-footer{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
 }
 
-body.dark .skill-tags span {
-    background: #334155;
-    color: white;
+/* Buttons */
+
+body.dark .secondary-btn{
+
+    background:#1e293b;
+    color:#fff;
+    border:1px solid #334155;
+
 }
 
-body.dark header {
-    background: #0f172a;
-}
+body.dark .secondary-btn:hover{
 
-body.dark .logo {
-    color: white;
-}
+    border-color:#14b8a6;
 
-body.dark .nav-links a {
-    color: white;
-}
-
-body.dark #themeToggle {
-    background: var(--color-surface-dark);
-    color: white;
-}
-
-body.dark .about,
-body.dark .experience,
-body.dark .contact,
-body.dark .publications {
-    background: var(--color-bg-dark);
-}
-
-body.dark .about-text p,
-body.dark .timeline-content h3,
-body.dark .timeline-content h4 {
-    color: white;
-}
-
-body.dark .project-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* =====================================================
