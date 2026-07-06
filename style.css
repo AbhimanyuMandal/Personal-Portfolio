@@ -1975,3 +1975,97 @@ PROJECT FOOTER
     font-size:12px;
     font-weight:600;
 }
+
+
+/* ===========================
+   DARK MODE FIXES
+=========================== */
+
+body.dark-mode{
+
+    background:#0f172a;
+
+    color:#f8fafc;
+
+}
+
+/* Sections */
+
+body.dark-mode section{
+
+    background:#0f172a !important;
+
+}
+
+/* Cards */
+
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .publication-card,
+body.dark-mode .award-card,
+body.dark-mode .timeline-content,
+body.dark-mode .about-card{
+
+    background:#1e293b !important;
+
+    color:#f8fafc;
+
+}
+
+/* Headings */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4{
+
+    color:white;
+
+}
+
+/* Paragraphs */
+
+body.dark-mode p{
+
+    color:#cbd5e1;
+
+}
+
+/* Links */
+
+body.dark-mode a{
+
+    color:white;
+
+}
+
+/* Tags */
+
+body.dark-mode .project-tags span,
+body.dark-mode .skill-tag{
+
+    background:#334155;
+
+    color:white;
+
+}
+
+/* Footer of cards */
+
+body.dark-mode .project-footer{
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+/* Buttons */
+
+body.dark-mode .btn-secondary{
+
+    background:#1e293b;
+
+    border:1px solid #475569;
+
+    color:white;
+
+}
