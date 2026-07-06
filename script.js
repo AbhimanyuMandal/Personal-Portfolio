@@ -98,34 +98,18 @@ document.querySelectorAll("section").forEach(section=>{
 
 const topBtn = document.getElementById("backToTop");
 
-window.addEventListener("scroll",()=>{
-
-    if(window.scrollY>500){
-
-        topBtn.style.display="flex";
-
-    }
-
-    else{
-
-        topBtn.style.display="none";
-
-    }
-
-});
-
-topBtn.addEventListener("click",()=>{
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
+if (topBtn) {
+    window.addEventListener("scroll", () => {
+        topBtn.style.display = window.scrollY > 500 ? "flex" : "none";
     });
 
-});
-
+    topBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
 
 /* =====================================================
    NAVBAR SHADOW
