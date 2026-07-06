@@ -1245,3 +1245,21 @@ body.dark .project-footer {
         height: 340px;
     }
 }
+
+/* ==========================================
+   Availability Badge - Dark Mode Fix
+========================================== */
+
+body.dark .availability {
+    background: #ffffff;
+    color: #0f172a;
+    border: 1px solid #e5e7eb;
+}
+
+body.dark .availability .dot {
+    background: #16a34a;
+}
+
+body.dark .availability * {
+    color: #0f172a !important;
+}
