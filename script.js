@@ -175,51 +175,63 @@ if(localStorage.getItem("theme")==="dark"){
    COUNTER ANIMATION
 ===================================================== */
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const stats = document.querySelectorAll(".stat h3");
+/* =====================================================
+   COUNTER ANIMATION
+===================================================== */
 
-    const animateCounter = (element) => {
-        const target = Number(element.dataset.target);
-        const duration = 1500;
-        const startTime = performance.now();
+const stats = document.querySelectorAll(".stat h3");
 
-        const updateCounter = (currentTime) => {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
+const counterObserver = new IntersectionObserver(
+    entries => {
 
-            // Smooth ease-out animation
-            const easedProgress = 1 - Math.pow(1 - progress, 3);
-            const currentValue = Math.floor(target * easedProgress);
+        entries.forEach(entry => {
 
-            element.textContent =
-                currentValue.toLocaleString("en-IN") + "+";
+            if (!entry.isIntersecting) return;
 
-            if (progress < 1) {
-                requestAnimationFrame(updateCounter);
-            } else {
+            const element = entry.target;
+            const target = Number(element.dataset.target);
+            const duration = 1500;
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+
+                // Smooth ease-out animation
+                const easedProgress =
+                    1 - Math.pow(1 - progress, 3);
+
+                const currentValue =
+                    Math.floor(target * easedProgress);
+
                 element.textContent =
-                    target.toLocaleString("en-IN") + "+";
-            }
-        };
+                    currentValue.toLocaleString("en-IN") + "+";
 
-        requestAnimationFrame(updateCounter);
-    };
+                if (progress < 1) {
 
-    const observer = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounter(entry.target);
-                    observer.unobserve(entry.target);
+                    requestAnimationFrame(updateCounter);
+
+                } else {
+
+                    element.textContent =
+                        target.toLocaleString("en-IN") + "+";
+
                 }
-            });
-        },
-        {
-            threshold: 0.5
-        }
-    );
+            }
 
-    stats.forEach(stat => observer.observe(stat));
+            requestAnimationFrame(updateCounter);
+
+            counterObserver.unobserve(element);
+
+        });
+
+    },
+    {
+        threshold: 0.5
+    }
+);
+
+stats.forEach(stat => {
+    counterObserver.observe(stat);
 });
-</script>
