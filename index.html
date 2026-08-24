@@ -305,108 +305,304 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="featured" aria-labelledby="projects-heading">
-            <div class="section-title">
-                <h2 id="projects-heading">Featured Work</h2>
-                <p>Research and analytics projects.</p>
-            </div>
-            <div class="project-grid">
-                 <article class="project-card">
-                    <img src="assets/Neurotoxicity.png" alt="Neurotoxicity Prediction Model Visualization">
-                    <div class="content">
-                        <h3>Drug Neurotoxicity Prediction</h3>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>RDKit</span>
-                            <span>Scikit-Learn</span>
-                            <span>Cheminformatics</span>
-                            <span>Machine Learning</span>
-                        </div>
-                        <p>Built an end-to-end RDKit-based ML pipeline for neurotoxicity prediction, achieving 84.06% accuracy and 0.91 ROC-AUC.
-                        </p>
-                        <div class="project-footer">
-                            <a href="https://github.com/AbhimanyuMandal/Neurotoxicity-Prediction-ML" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <img src="assets/dashboard_1_claims_overview.png" alt="Healthcare Claims Analytics Dashboard">
-                    <div class="content">
-                        <h3>Healthcare Claims Analytics</h3>
-                        <div class="project-tags">
-                            <span>Tableau</span>
-                            <span>R</span>
-                            <span>Analytics</span>
-                        </div>
-                        <p>
-                            Analyzed 15,000+ health insurance claims using R and Tableau, uncovering settlement trends, fraud risks, and provider performance.
-                        </p>
-                        <div class="project-footer">
-                            <a href="https://github.com/AbhimanyuMandal/healthcare-claims-analytics" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                            <a href="https://public.tableau.com/app/profile/abhimanyu.mandal/viz/HealthcareClaimsAnalyticsStory/HealthcareClaimsAnalyticsStory" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-solid fa-chart-line"></i>
-                                Live Dashboard
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+<section id="projects" class="featured" aria-labelledby="projects-heading">
 
-                <article class="project-card">
-                    <img src="assets/Germline mutation.png" alt="Cancer Genomics Pipeline Visualization">
-                    <div class="content">
-                        <h3>Cancer Genomics</h3>
-                        <div class="project-tags">
-                            <span>WES</span>
-                            <span>GATK</span>
-                            <span>ClinVar</span>
-                            <span>ACMG</span>
-                        </div>
-                        <p>
-                            Designed a reproducible bioinformatics pipeline to analyze Whole Exome Sequencing data and identify germline variants associated with oral cancer in Indian patients.
-                        </p>
-                        <div class="project-footer">
-                            <a href="https://github.com/AbhimanyuMandal/germline-variant-analysis-pipeline/" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+    <div class="section-title">
+        <h2 id="projects-heading">Selected Research &amp; Bioinformatics Projects</h2>
+        <p>
+            Selected projects spanning cancer genomics, single-cell analysis,
+            bioinformatics workflows, machine learning, and healthcare analytics.
+        </p>
+    </div>
 
-                <article class="project-card">
-                    <img src="assets/TB.png" alt="TB Risk Mapping Visualization">
-                    <div class="content">
-                        <h3>TB Risk Mapping</h3>
-                        <div class="project-tags">
-                            <span>R</span>
-                            <span>INLA</span>
-                            <span>GIS</span>
-                            <span>BYM</span>
-                        </div>
-                        <p>
-                            Developed a Bayesian spatial epidemiology workflow for tuberculosis surveillance, identifying high-risk regions through geospatial analysis.
-                        </p>
-                        <div class="project-footer">
-                            <a href="https://github.com/AbhimanyuMandal/NDMC" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+    <div class="project-grid">
+
+        <!-- 1. Breast Cancer scRNA-seq Drug Repurposing -->
+        <article class="project-card">
+
+            <!-- Replace this image with your scRNA-seq project visualization -->
+            <img src="assets/Neurotoxicity.png"
+                 alt="Breast cancer single-cell RNA-seq drug repurposing analysis">
+
+            <div class="content">
+
+                <h3>Breast Cancer scRNA-seq Drug Repurposing — Expanded Reanalysis</h3>
+
+                <div class="project-tags">
+                    <span>R</span>
+                    <span>Seurat</span>
+                    <span>scRNA-seq</span>
+                    <span>LINCS</span>
+                    <span>Drug Repurposing</span>
+                </div>
+
+                <p>
+                    Reconstructed and extended a breast cancer scRNA-seq workflow
+                    using Seurat, pseudobulk differential expression, disease-signature
+                    construction, pathway analysis, and LINCS connectivity analysis
+                    to identify computational drug-repurposing candidates.
+                </p>
+
+                <p class="project-outcome">
+                    <strong>Selected outcome:</strong>
+                    Screened <strong>6,720 compounds</strong> across
+                    <strong>9,108 perturbational signatures</strong>, identifying
+                    <strong>66 robust candidates</strong> and prioritizing
+                    <strong>23 candidates</strong> with mechanistic support.
+                </p>
+
+                <div class="project-footer">
+                    <a href="https://github.com/AbhimanyuMandal/HER2-Luminal-Breast-Cancer-Drug-Repurposing"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
             </div>
-        </section>
+        </article>
+
+
+        <!-- 2. Nextflow Germline Variant Calling -->
+        <article class="project-card">
+
+            <img src="assets/Germline mutation.png"
+                 alt="Nextflow germline variant calling pipeline">
+
+            <div class="content">
+
+                <h3>Nextflow NGS DSL2 Germline Variant Calling Pipeline</h3>
+
+                <div class="project-tags">
+                    <span>Nextflow DSL2</span>
+                    <span>GATK</span>
+                    <span>BWA-MEM</span>
+                    <span>SAMtools</span>
+                    <span>VEP</span>
+                </div>
+
+                <p>
+                    Developed a modular Nextflow DSL2 implementation of the
+                    GATK Best Practices workflow for germline variant discovery,
+                    covering FASTQ preprocessing, BWA-MEM alignment, BAM processing,
+                    variant calling and filtration, and Ensembl VEP annotation.
+                </p>
+
+                <p class="project-outcome">
+                    <strong>Selected outcome:</strong>
+                    Built a modular, reproducible, and resumable workflow
+                    for scalable germline variant analysis.
+                </p>
+
+                <div class="project-footer">
+                    <a href="https://github.com/AbhimanyuMandal/nextflow-germline-variant-pipeline"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- 3. Nextflow NGS Quality Control -->
+        <article class="project-card">
+
+            <img src="assets/Germline mutation.png"
+                 alt="Nextflow NGS quality control pipeline">
+
+            <div class="content">
+
+                <h3>Nextflow NGS Quality Control Pipeline</h3>
+
+                <div class="project-tags">
+                    <span>Nextflow DSL2</span>
+                    <span>FastQC</span>
+                    <span>MultiQC</span>
+                    <span>NGS QC</span>
+                    <span>Linux</span>
+                </div>
+
+                <p>
+                    Developed a modular Nextflow DSL2 workflow for automated
+                    quality assessment of raw FASTQ sequencing data using FastQC
+                    and MultiQC, with structured outputs and an extensible
+                    workflow architecture.
+                </p>
+
+                <p class="project-outcome">
+                    <strong>Selected outcome:</strong>
+                    Automated the FastQC → MultiQC quality-control workflow
+                    into a reproducible NGS analysis pipeline.
+                </p>
+
+                <div class="project-footer">
+                    <a href="https://github.com/AbhimanyuMandal/nextflow-ngs-qc-pipeline"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- 4. Drug Neurotoxicity Prediction -->
+        <article class="project-card">
+
+            <img src="assets/Neurotoxicity.png"
+                 alt="Machine learning drug neurotoxicity prediction model">
+
+            <div class="content">
+
+                <h3>Drug Neurotoxicity Prediction</h3>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>RDKit</span>
+                    <span>Scikit-Learn</span>
+                    <span>Cheminformatics</span>
+                    <span>Machine Learning</span>
+                </div>
+
+                <p>
+                    Developed an end-to-end machine-learning workflow for
+                    predicting drug-induced neurotoxicity using molecular
+                    descriptors and chemical fingerprints, integrating
+                    cheminformatics and supervised learning.
+                </p>
+
+                <p class="project-outcome">
+                    <strong>Selected outcome:</strong>
+                    Benchmarked Logistic Regression, Random Forest, and SVM models;
+                    Random Forest achieved <strong>84.06% accuracy</strong> and
+                    <strong>0.91 ROC-AUC</strong>.
+                </p>
+
+                <div class="project-footer">
+                    <a href="https://github.com/AbhimanyuMandal/Neurotoxicity-Prediction-ML"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- 5. WES Germline Variant Analysis -->
+        <article class="project-card">
+
+            <img src="assets/Germline mutation.png"
+                 alt="Whole-exome sequencing germline variant analysis">
+
+            <div class="content">
+
+                <h3>Whole-Exome Sequencing (WES) — Germline Variant Analysis</h3>
+
+                <div class="project-tags">
+                    <span>WES</span>
+                    <span>GATK</span>
+                    <span>ClinVar</span>
+                    <span>VEP</span>
+                    <span>ACMG</span>
+                </div>
+
+                <p>
+                    Developed a reproducible WES germline variant-analysis
+                    workflow covering quality control, alignment, GATK-based
+                    variant discovery and filtering, functional annotation,
+                    and downstream variant prioritization.
+                </p>
+
+                <p class="project-outcome">
+                    <strong>Selected outcome:</strong>
+                    Built an end-to-end Linux/Bash workflow integrating
+                    FastQC, BWA-MEM, SAMtools, Picard, GATK, VEP, and R
+                    for downstream variant interpretation.
+                </p>
+
+                <div class="project-footer">
+                    <a href="https://github.com/AbhimanyuMandal/germline-variant-analysis-pipeline"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+
+        <!-- 6. Healthcare Claims Analytics -->
+        <article class="project-card">
+
+            <img src="assets/dashboard_1_claims_overview.png"
+                 alt="Healthcare claims analytics dashboard">
+
+            <div class="content">
+
+                <h3>Healthcare Claims Analytics (R &amp; Tableau)</h3>
+
+                <div class="project-tags">
+                    <span>R</span>
+                    <span>SQL</span>
+                    <span>Tableau</span>
+                    <span>Healthcare Analytics</span>
+                    <span>Data Visualization</span>
+                </div>
+
+                <p>
+                    Analyzed 15,000+ healthcare insurance claims using R,
+                    SQL, and Tableau to investigate settlement trends,
+                    fraud risk, provider performance, and operational efficiency.
+                </p>
+
+                <p class="project-outcome">
+                    <strong>Selected outcome:</strong>
+                    Analyzed claims worth <strong>₹2.30+ billion</strong>,
+                    identified <strong>469 potential fraudulent claims</strong>,
+                    and developed <strong>4 interactive Tableau dashboards</strong>.
+                </p>
+
+                <div class="project-footer">
+
+                    <a href="https://github.com/AbhimanyuMandal/healthcare-claims-analytics"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="https://public.tableau.com/app/profile/abhimanyu.mandal/viz/HealthcareClaimsAnalyticsStory/HealthcareClaimsAnalyticsStory"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-solid fa-chart-line"></i>
+                        Live Dashboard
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+</section>
 
         <!-- Scroll Indicator -->
         <div class="scroll-indicator" aria-hidden="true">
