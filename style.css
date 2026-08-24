@@ -641,105 +641,46 @@ header {
 }
 
 
-/* =====================================================
-   PROJECTS
-===================================================== */
-
-.featured {
-    background: white;
-}
+/* =========================
+   Project Cards
+========================= */
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 35px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
 }
 
 .project-card {
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: 0.35s;
     display: flex;
     flex-direction: column;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-card img {
-    height: 185px;
-    width: 100%;
-    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
 }
 
 .project-card .content {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 28px;
 }
 
-.project-card h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.project-card p {
-    color: #4b5563;
-    line-height: 1.8;
-    margin: 18px 0;
-    height: 120px;
-}
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 16px;
-}
-
-.project-tags span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    min-width: 60px;
-    padding: 0 12px;
-    border-radius: 999px;
-    background: #eef2ff;
-    color: #374151;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.project-footer {
+.project-card .project-footer {
     margin-top: auto;
-    padding-top: 18px;
-    border-top: 1px solid #e5e7eb;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
 }
 
-.project-footer a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--color-accent);
-    transition: 0.25s;
+.project-card .project-outcome {
+    margin-top: 18px;
+    line-height: 1.6;
 }
 
-.project-footer a:hover {
-    color: var(--color-accent2);
-    transform: translateX(5px);
+/* Project images */
+.project-card > img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
 }
-
 /* =====================================================
    EDUCATION
 ===================================================== */
