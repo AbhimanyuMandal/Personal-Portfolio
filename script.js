@@ -5,7 +5,7 @@
 const words = [
     "Computational Biologist",
     "Bioinformatics Researcher",
-    "Healthcare Data Scientist"
+    "Genomics & Multi-Omics Analyst"
 ];
 
 const typingElement = document.getElementById("typing");
