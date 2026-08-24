@@ -366,7 +366,18 @@ header {
     border-radius: 50%;
     z-index: -1;
 }
+.hero-specialization {
+    margin-top: 14px;
+    font-size: 0.98rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
 
+.hero-specialization span {
+    color: var(--accent);
+    margin: 0 5px;
+}
 /* =====================================================
    STATS
 ===================================================== */
