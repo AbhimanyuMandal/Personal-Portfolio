@@ -175,51 +175,51 @@ if(localStorage.getItem("theme")==="dark"){
    COUNTER ANIMATION
 ===================================================== */
 
-const counters = document.querySelectorAll(".stat h3");
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const stats = document.querySelectorAll(".stat h3");
 
-const counterObserver = new IntersectionObserver(entries=>{
+    const animateCounter = (element) => {
+        const target = Number(element.dataset.target);
+        const duration = 1500;
+        const startTime = performance.now();
 
-    entries.forEach(entry=>{
+        const updateCounter = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
 
-        if(entry.isIntersecting){
+            // Smooth ease-out animation
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+            const currentValue = Math.floor(target * easedProgress);
 
-            const el = entry.target;
+            element.textContent =
+                currentValue.toLocaleString("en-IN") + "+";
 
-            const target = parseInt(el.innerText);
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                element.textContent =
+                    target.toLocaleString("en-IN") + "+";
+            }
+        };
 
-            let value=0;
+        requestAnimationFrame(updateCounter);
+    };
 
-            const speed=Math.max(10,Math.floor(target/80));
-
-            const timer=setInterval(()=>{
-
-                value+=speed;
-
-                if(value>=target){
-
-                    value=target;
-
-                    clearInterval(timer);
-
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    observer.unobserve(entry.target);
                 }
-
-                if(el.innerText.includes("+"))
-
-                    el.innerHTML=value+"+";
-
-                else
-
-                    el.innerHTML=value;
-
-            },20);
-
-            counterObserver.unobserve(el);
-
+            });
+        },
+        {
+            threshold: 0.5
         }
+    );
 
-    });
-
+    stats.forEach(stat => observer.observe(stat));
 });
-
-counters.forEach(c=>counterObserver.observe(c));
-
+</script>
