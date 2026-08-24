@@ -617,6 +617,35 @@ header {
     font-weight: 600;
 }
 
+.experience-focus {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #0f766e;
+    margin: 8px 0 16px;
+}
+
+.selected-outcome {
+    margin: 18px 0;
+    padding: 14px 18px;
+    border-left: 3px solid var(--primary-color);
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 0 8px 8px 0;
+}
+
+.selected-outcome strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.selected-outcome p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
 /* =====================================================
    PROJECTS
 ===================================================== */
